@@ -30,6 +30,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   # spec.add_dependency 'activerecord'
-  # spec.add_dependency 'caracal'
-  # spec.add_dependency 'thor'
+  spec.add_dependency 'activerecord-postgis-adapter', '~> 6.0'
+  spec.add_dependency 'caracal'
+  spec.add_dependency 'pg', '>= 0.18', '< 2.0'
+  spec.add_dependency 'rails', '~> 6.0.0'
+  spec.add_dependency 'rgeo-activerecord', '~> 6.2', '>= 6.2.1'
+  spec.add_dependency 'thor'
 end
