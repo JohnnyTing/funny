@@ -14,7 +14,7 @@ module Funny
     private
 
     def connection
-      @conn ||= ActiveRecord::Base.connection
+      @conn ||= ::ActiveRecord::Base.connection
     end
 
     def filter_table_names
