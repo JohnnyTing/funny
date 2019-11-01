@@ -1,9 +1,10 @@
 require 'thor'
 require 'caracal'
+require 'active_record'
 module Funny
   class CLI < Thor
 
-    desc 'generate ITEM', 'generates a Microsoft Word document(.docx)'
+    desc 'generate method', 'generates a Microsoft Word document(.docx)'
     def generate
       puts 'generate a word'
       docx = Caracal::Document.new('database_metadata.docx')
@@ -14,7 +15,7 @@ module Funny
     private
 
     def connection
-      @conn ||= ::ActiveRecord::Base.connection
+      @conn ||= ActiveRecord::Base.connection
     end
 
     def filter_table_names
