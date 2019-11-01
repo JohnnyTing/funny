@@ -15,6 +15,7 @@ module Funny
     private
 
     def connection
+      # @conn ||= ActiveRecord::Base.establish_connection YAML::load(File.open('config/database.yml'))['development']
       @conn ||= ActiveRecord::Base.connection
     end
 
@@ -31,8 +32,8 @@ module Funny
     end
 
     def table_metadata(table_name, rows)
-      model = model_name_from_table(table_name)
-      model.columns.each do |column|
+      @columns = connection.columns(table_name)
+      @columns.each do |column|
         rows << [column.name, column.type, column.comment, column.default, column.geographic, column.null]
       end
       rows
