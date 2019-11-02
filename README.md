@@ -16,22 +16,16 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install funny
-
 ## Usage
 
 Just execute this command
-```shell
+
     $ funny generate
-```
 
 Default that is connects to the database in your development environment, if you want to do that in production environment,
 you can execute below this command:
-```shell
+
     $ funny generate --environment production
-```
 
 ## Development
 
