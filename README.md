@@ -12,7 +12,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'funny'
 ```
-or
+Or
 ```ruby
 gem 'funny', github: 'JohnnyTing/funny'
 ```
@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-just execute this command
+Just execute this command
 ```shell
     $ funny generate
 ```
