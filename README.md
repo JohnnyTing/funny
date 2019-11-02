@@ -10,10 +10,6 @@ like field name、field type、field comments etc.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'funny'
-```
-Or
-```ruby
 gem 'funny', github: 'JohnnyTing/funny'
 ```
 And then execute:
