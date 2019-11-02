@@ -8,5 +8,6 @@
 /tmp/
 .idea
 /config/
+database_metadata.docx
 # rspec failure tracking
 .rspec_status

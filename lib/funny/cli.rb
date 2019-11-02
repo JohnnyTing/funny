@@ -5,9 +5,11 @@ module Funny
   class CLI < Thor
 
     desc 'generate method', 'generates a Microsoft Word document(.docx)'
+    method_option :environment, aliases: "-env"
     def generate
       puts 'generate a word'
       docx = Caracal::Document.new('database_metadata.docx')
+      @environment = options[:environment] || 'development'
       finished_data = collect_data docx
       finished_data.save
     end
@@ -15,8 +17,9 @@ module Funny
     private
 
     def connection
-      # @conn ||= ActiveRecord::Base.establish_connection YAML::load(File.open('config/database.yml'))['development']
-      @conn ||= ActiveRecord::Base.connection
+      # @conn = ActiveRecord::Base.connection
+      connection_pool = ActiveRecord::Base.establish_connection YAML::load(File.open('config/database.yml'))[@environment]
+      connection_pool.connection
     end
 
     def filter_table_names
