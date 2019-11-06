@@ -1,7 +1,6 @@
 # Funny
 
-Funny is a gem that create a Microsoft Word document(.docx), and the word_document includes tables's metadata,
-like field name、field type、field comments etc.
+Funny is a gem that creates a Microsoft Word document(.docx), and the word_document includes tables's metadata, like field name, field type, field comments etc.
 
 ![word_document](https://dingxu66.oss-cn-beijing.aliyuncs.com/img/20191102144020.png)
 
@@ -12,6 +11,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'funny', github: 'JohnnyTing/funny'
 ```
+
 And then execute:
 
     $ bundle
@@ -22,8 +22,8 @@ Just execute this command
 
     $ funny generate
 
-By default, it is connects to the database in your development environment, if you want to do that in production environment,
-you can execute below this command:
+By default, it is connected to the database in your development environment. 
+If you want to do that in the production environment, you can execute below this command:
 
     $ funny generate --environment production
 
