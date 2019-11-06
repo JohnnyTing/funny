@@ -22,7 +22,7 @@ Just execute this command
 
     $ funny generate
 
-Default that is connects to the database in your development environment, if you want to do that in production environment,
+By default, it is connects to the database in your development environment, if you want to do that in production environment,
 you can execute below this command:
 
     $ funny generate --environment production
