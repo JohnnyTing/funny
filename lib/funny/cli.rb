@@ -37,7 +37,7 @@ module Funny
     def table_metadata(table_name, rows)
       @columns = connection.columns(table_name)
       @columns.each do |column|
-        rows << [column.name, column.type, column.comment, column.default, column.geographic, column.null]
+        rows << [column.name, column.type, column.comment, column.default, column.null]
       end
       rows
     end
@@ -46,7 +46,7 @@ module Funny
       discovered_tables.each_with_index do |table_name, index|
         rows = []
         docx.h1 "#{index+1}.#{table_name}"
-        rows << %w[field type comment default_value geographic allow_null]
+        rows << %w[field type comment default_value allow_null]
         rows = table_metadata(table_name, rows)
         next unless rows.present?
         docx.table rows , border_size: 4 do
