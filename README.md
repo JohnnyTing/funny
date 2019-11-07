@@ -2,7 +2,7 @@
 
 Funny is a gem that creates a Microsoft Word document(.docx), and the word_document includes tables's metadata, like field name, field type, field comments etc.
 
-![word_document](https://dingxu66.oss-cn-beijing.aliyuncs.com/img/20191102144020.png)
+![word_document](https://dingxu66.oss-cn-beijing.aliyuncs.com/img/20191107092756.png)
 
 ## Installation
 
