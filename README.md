@@ -18,7 +18,7 @@ And then execute:
 
 ## Usage
 
-First of all, you need to configure config/database.yml in your rails application
+First of all, you need to configure the config/database.yml in your rails application
 
 Then just execute this command
 
