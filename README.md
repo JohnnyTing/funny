@@ -18,7 +18,9 @@ And then execute:
 
 ## Usage
 
-Just execute this command
+First of all, you need to configure config/database.yml in your rails application
+
+Then just execute this command
 
     $ funny generate
 
