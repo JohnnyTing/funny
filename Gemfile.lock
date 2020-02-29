@@ -67,7 +67,7 @@ GEM
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
-    rake (10.5.0)
+    rake (13.0.1)
     rgeo (2.1.1)
     rgeo-activerecord (6.2.1)
       activerecord (>= 5.0)
@@ -103,7 +103,7 @@ DEPENDENCIES
   cucumber
   funny!
   pg (>= 0.18, < 2.0)
-  rake (~> 10.0)
+  rake (~> 13.0)
   rgeo-activerecord (~> 6.2, >= 6.2.1)
   rspec (~> 3.0)
 
